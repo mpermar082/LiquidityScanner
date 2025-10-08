@@ -1,18 +1,33 @@
-{{
-    "compilerOptions": {{
-        "target": "ES2020",
-        "module": "commonjs",
-        "outDir": "./dist",
-        "rootDir": "./src",
-        "strict": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "resolveJsonModule": true,
-        "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true
-    }},
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "dist", "**/*.test.ts"]
-}}
+{
+  // Compiler options for the TypeScript compiler
+  "compilerOptions": {
+    // Target the ES2020 JavaScript standard
+    "target": "ES2020",
+    // Use the CommonJS module system
+    "module": "commonjs",
+    // Output compiled files to the dist directory
+    "outDir": "./dist",
+    // Root directory for the source files
+    "rootDir": "./src",
+    // Enable strict type checking
+    "strict": true,
+    // Allow interoperability between CommonJS and ES modules
+    "esModuleInterop": true,
+    // Skip checking of ambient modules
+    "skipLibCheck": true,
+    // Force consistent casing in file names
+    "forceConsistentCasingInFileNames": true,
+    // Enable resolving JSON modules
+    "resolveJsonModule": true,
+    // Generate .d.ts files for declaration
+    "declaration": true,
+    // Generate .d.ts.map files for declaration
+    "declarationMap": true,
+    // Generate source map files
+    "sourceMap": true
+  },
+  // Include all files in the src directory and its subdirectories
+  "include": ["src/**/*"],
+  // Exclude certain directories and files
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}
